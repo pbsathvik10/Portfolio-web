@@ -1,0 +1,127 @@
+.navbar{
+  
+    width:auto ;
+    height: 70px;
+    background-color: rgb(0, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 3px black;
+    border-radius: 3px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    
+}
+
+.logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+   color: blue;
+   margin-left: 100px;
+}
+.navlinks{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+   
+}
+
+.menu{
+    display:none;
+    margin: 10px;
+    font-size: 20px;
+    position: relative;
+}
+
+
+#menubar{
+  width: 100%;
+  height: 500px;
+ 
+    position:absolute;
+    background-color:rgb(246, 13, 13);
+    top: 70px;
+    left:0px;
+    transform: translateX(-100%);
+    transition: transform 1s ease 0s;
+     box-shadow: 0px 1px 3px rgb(14, 2, 2);
+     border-radius: 10px;
+}
+
+
+
+@media screen and (max-width:828px){
+    
+
+    .navlinks{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+
+
+#menubar:target{
+   transform:  translateX(0);
+   
+}
+
+
+.mobilelinks{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    
+
+}
+
+.closebtn{
+    position: absolute;
+    font-size: 25px;
+   right: 15px;
+   top: 15px;
+
+}
+
+.homecard{
+    width: 80%;
+    height: 600px;
+    margin: 100px;
+    display: flex;
+   
+   
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px black;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.intro{
+   position:relative;
+   left: 20px;
+    font-size: large;
+}
+
+.photo{
+    width: 500px;
+    height: 500px;
+    background-image: url("dp.png");
+    background-size: cover;
+    margin: 20px;
+      box-shadow: 0px 0px 10px rgb(14, 2, 2);
+      border-radius: 10px;
+    
+}
