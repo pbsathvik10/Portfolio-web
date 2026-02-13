@@ -110,18 +110,20 @@
 .title{
     margin-left: 120px;
     font-size: large;
+    
 }
 .intro{
-   position:relative;
+   
    left: 100px;
     font-size: large;
+    margin-bottom: 50px;
 }
 
 
 .photo{
     width: 300px;
     height: 300px;
-    background-image: url("dp.png");
+    background-image: url("/assets/dp.png");
     background-size: cover;
     margin: 20px;
       box-shadow: 0px 0px 10px rgb(14, 2, 2);
@@ -139,15 +141,53 @@
     margin: 10px 0px 0px 220px  ;
 }
 
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .card2{
     width: 90%;
-    height: 500px;
     display: flex;
-background-color: red;
+    background-color: rgb(239, 237, 237);
+    gap: 30px;
 }
+    
 .card2img{
-    width: 1000px;
-    height: 500px;
-    background-image: url("dp.png");
-    background-size: cover;
+    width: 300px;
+    height: 450px;
+    background-image: url("/assets/dp.png");
+   background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+
 }
+
+.c2title{
+    text-align: center;
+}
+
+.eboxes{
+    display: flex;
+    gap: 20px;
+
+}
+.ssc{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+}
+
+
+
+
+
